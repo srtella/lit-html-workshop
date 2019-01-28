@@ -10,6 +10,7 @@ You can work on the assignment by copy pasting them into http://plnkr.co/edit/DI
 4. [Child component](./2-lit-element/assignments/4-child-component.html)
 5. [Read toggle](./2-lit-element/assignments/5-read-toggle.html)
 6. [Filter articles](./2-lit-element/assignments/6-filter-articles.html)
+7. [Styling](./2-lit-element/assignments/7-styling.html)
 
 ## Solutions
 1. [Hello world](./2-lit-element/solutions/1-hello-world.html)
@@ -17,7 +18,7 @@ You can work on the assignment by copy pasting them into http://plnkr.co/edit/DI
 3. [Render articles](./2-lit-element/solutions/3-render-articles.html)
 4. [Child component](./2-lit-element/solutions/4-child-component.html)
 5. [Read toggle](./2-lit-element/solutions/5-read-toggle.html)
-6. [Filter articles](./2-lit-element/solutions/6-filter-articles.html)
+6. [Styling](./2-lit-element/solutions/7-styling.html)
 
 ## Cheatsheet
 Below are some code samples for quick reference, and some comparisons to how things are in in Polymer.
