@@ -37,6 +37,7 @@
       }
 
       render() {
+        // apply filter to the array
         const filteredArticles = this.articles.filter(article => {
           if(this.filter === 'read') return article.read;
           if(this.filter === 'unread') return !article.read;
@@ -49,7 +50,6 @@
           <button @click=${() => this.filter = 'unread'}>unread</button>
 
           <ul>
-            <!-- apply filter to the array -->
             ${filteredArticles.map(article => html`
               <my-article
                 .title=${article.title}
