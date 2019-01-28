@@ -29,6 +29,7 @@
         filter: { type: String }
       }
     }
+    
     static get styles() {
       return [
         css`
@@ -53,11 +54,13 @@
         `
       ]
     }
+    
     constructor() {
       super();
       this.stories = [];
       this.filter = 'all';
     }
+    
     connectedCallback() {
       super.connectedCallback();
       fetch('https://newsapi.org/v2/everything?q=ing+bank&from=2019-01-01&sortBy=publishedAt&apiKey=0067878edf7d4084a6557032dbd0cab1')
@@ -68,10 +71,12 @@
           });
         });
     }
+    
     _toggleReadStatus(e) {
       this.stories[e.detail].read = !this.stories[e.detail].read;
       this.requestUpdate();
     }
+    
     getFilteredStories(filter){
       return this.stories.filter((article) => {
         if(filter === 'read') return article.read;
@@ -79,6 +84,7 @@
         if(filter === 'all') return true;
       });
     }
+    
     render() {
       return html`
           <header>
@@ -95,19 +101,33 @@
               if(this.filter === 'unread') return !article.read;
               if(this.filter === 'all') return true;
             }).map((article) => {
-                return html`<my-article @toggled=${this._toggleReadStatus} .article=${article}></my-article>`;
+                return html`
+                  <my-article 
+                    @toggled=${this._toggleReadStatus} 
+                    .read=${article.read}
+                    .title=${article.title}
+                    .description=${article.description}
+                    .id=${article.id}>
+                  </my-article>`;
               })
             }
           </div>
         `;
     }
   }
+  
+  customElements.define('demo-app', DemoApp);
+
   class Article extends LitElement {
     static get properties() {
       return {
-        article: { type: Object }
+        title: { type: String },
+        description: { type: String },
+        read: { type: Boolean },
+        id: { type: Number }
       }
     }
+    
     static get styles() {
       return [
         css`
@@ -135,28 +155,30 @@
         `
       ]
     }
+    
     _toggleRead() {
-      this.dispatchEvent(new CustomEvent('toggled', { detail: this.article.id }));   
+      this.dispatchEvent(new CustomEvent('toggled', { detail: this.id }));   
     }
+    
     render() {
       return html`
         <paper-card>
           <div class="header">
-            <h2>${this.article.title}</h2>
+            <h2>${this.title}</h2>
             <div class="buttons">
-              ${this.article.read ? 
+              ${this.read ? 
                 html`<paper-fab @click=${this._toggleRead} mini icon="icons:visibility"></paper-fab>` : 
                 html`<paper-fab @click=${this._toggleRead} mini icon="icons:visibility-off"></paper-fab>`
               } 
             </div>
           </div>
-          <p>${this.article.description}</p>
+          <p>${this.description}</p>
         </paper-card>
       `;
     }
   }
+  
   customElements.define('my-article', Article);
-  customElements.define('demo-app', DemoApp);
 </script>
 </body>
 </html>
