@@ -1,6 +1,11 @@
 # More examples:
 - Use polymer web component
 - read/under counter
+- Display placeholder content during fetching
+- more advanced conditional rendering
+- Use style modules
 - Render a different template based on the type of article
 - Shared styles
+- Split up component templates into separate methods
 - Component that's just a template function
+- Use ing-web?
