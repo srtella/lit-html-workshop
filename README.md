@@ -1,7 +1,7 @@
 # lit-html workshop
 In this workshop you will work on assigments. The lit-html assignments are done with the whole group, the lit-element assignments are done individually.
 
-You can work on the assignment through the http://plnkr.co/ link in the top of each assignment, or by cloning this repository and running it locally (npm start).
+You can work on the assignment by copy pasting them into http://plnkr.co/edit/DI9312Rn54NuIH7FRzzD?p=preview, or by cloning this repository and running it locally (npm start).
 
 ## Assignments
 1. [Hello world](./2-lit-element/assignments/1-hello-world.html)
