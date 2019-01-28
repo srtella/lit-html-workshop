@@ -8,7 +8,8 @@
     /**
      * Assignment 2:
      *
-     * - Set up your API key at google news (TODO: @Passle add instructions here)
+     * - Set up your API key at google news, just click the link: https://newsapi.org/ and click 'GET API KEY'
+     *   Then add the &apiKey=<your-api-key> query param to you request, e.g.: https://newsapi.org/v2/everything?q=<some-topic>&apiKey=<your-api-key-goes-here>
      * - In the connectedCallback, make an API call to the news API.
      *   - See below for fetch example
      *   - For more info: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
@@ -22,7 +23,7 @@
     /**
      * fetch example:
      *
-     * fetch('https://newsapi.org/v2/everything/<your-api-key-goes-here>')
+     * fetch('https://newsapi.org/v2/everything?q=<some-topic>&apiKey=<your-api-key-goes-here>')
      *   // the response is a stream, we need to parse it as json first
      *   .then(response => response.json())
      *   .then(response => {
