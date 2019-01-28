@@ -37,6 +37,12 @@
       }
 
       render() {
+        const filteredArticles = this.articles.filter(article => {
+          if(this.filter === 'read') return article.read;
+          if(this.filter === 'unread') return !article.read;
+          if(this.filter === 'all') return true;
+        });
+
         return html`
           <button @click=${() => this.filter = 'all'}>all</button>
           <button @click=${() => this.filter = 'read'}>read</button>
@@ -44,11 +50,7 @@
 
           <ul>
             <!-- apply filter to the array -->
-            ${this.articles.filter(article => {
-              if(this.filter === 'read') return article.read;
-              if(this.filter === 'unread') return !article.read;
-              if(this.filter === 'all') return true;
-            }).map(article => html`
+            ${filteredArticles.map(article => html`
               <my-article
                 .title=${article.title}
                 .description=${article.description}

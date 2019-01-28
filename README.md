@@ -8,7 +8,7 @@ You can work on the assignment by copy pasting them into http://plnkr.co/edit/DI
 2. [Fetch first article](./2-lit-element/assignments/2-fetch-first-article.html)
 3. [Render articles](./2-lit-element/assignments/3-render-articles.html)
 4. [Child component](./2-lit-element/assignments/4-child-component.html)
-5. [Upwards data flow](./2-lit-element/assignments/5-upwards-data-flow.html)
+5. [Read toggle](./2-lit-element/assignments/5-read-toggle.html)
 6. [Filter articles](./2-lit-element/assignments/6-filter-articles.html)
 
 ## Solutions
@@ -16,7 +16,7 @@ You can work on the assignment by copy pasting them into http://plnkr.co/edit/DI
 2. [Fetch first article](./2-lit-element/solutions/2-fetch-first-article.html)
 3. [Render articles](./2-lit-element/solutions/3-render-articles.html)
 4. [Child component](./2-lit-element/solutions/4-child-component.html)
-5. [Upwards data flow](./2-lit-element/solutions/5-upwards-data-flow.html)
+5. [Read toggle](./2-lit-element/solutions/5-read-toggle.html)
 6. [Filter articles](./2-lit-element/solutions/6-filter-articles.html)
 
 ## Cheatsheet
