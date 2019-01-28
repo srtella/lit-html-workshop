@@ -8,4 +8,10 @@
 - Shared styles
 - Split up component templates into separate methods
 - Component that's just a template function
+- more directives?
+  - ifDefined
+  - styleMap
+  - classMap
+  - cache
+  - guard
 - Use ing-web?
