@@ -16,7 +16,7 @@ When you are done (or bored) there are advanced assignments which are free to pi
 6. [Filter articles](./2-lit-element/assignments/6-filter-articles.html)
 7. [Styling](./2-lit-element/assignments/7-styling.html)
 8. [Polymer components](./2-lit-element/assignments/8-polymer-components.html)
-9. [Read/under counter](./2-lit-element/assignments/9-read-unread-counter.html)
+9. [Read/unread counter](./2-lit-element/assignments/9-read-unread-counter.html)
 10. [Template function](./2-lit-element/assignments/10-template-function.html)
 
 ## Solutions
@@ -28,7 +28,7 @@ When you are done (or bored) there are advanced assignments which are free to pi
 6. [Filter articles](./2-lit-element/solutions/6-filter-articles.html)
 7. [Styling](./2-lit-element/solutions/7-styling.html)
 8. [Polymer components](./2-lit-element/solutions/8-polymer-components.html)
-9. [Read/under counter](./2-lit-element/solutions/9-read-unread-counter.html)
+9. [Read/unread counter](./2-lit-element/solutions/9-read-unread-counter.html)
 10. [Template function](./2-lit-element/solutions/10-template-function.html)
 
 ## Advanced assignments
