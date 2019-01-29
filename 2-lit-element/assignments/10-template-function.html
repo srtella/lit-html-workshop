@@ -6,18 +6,16 @@
 
   <script type="module">
     /**
-     * Assignment 3:
-     * Render the titles from all the articles of the google news API
-     *
-     * Steps:
-     * - Instead of taking only the title of the first article, assign all articles as a property
-     * - Render all articles titles in your template as a list
+     * Assignment 10:
+     * A very powerful thing of lit-html is the ability to create templates outside the context
+     * of web components. For this assignment: extract a part of your web component's template as
+     * a function which takes in some properties and returns a lit-html template. This function
+     * should be placed outside of our web component's class.
      *
      * Check out the README.md for reference documentation
      *
      * Copy paste into plnkr: http://plnkr.co/edit/DI9312Rn54NuIH7FRzzD?p=preview
      */
-
     import { LitElement, html, css } from 'https://unpkg.com/lit-element@2.0.0-rc.5?module';
 
     class MyElement extends LitElement {
