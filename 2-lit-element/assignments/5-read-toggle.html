@@ -7,7 +7,7 @@
   <script type="module">
     /**
      * Assignment 5:
-     * Create a toggle button which on click marks the article as 'read'. The button display 'read' or 'unread' based on the status of the article.
+     * Create a toggle button which on click marks the article as 'read'. The button displays 'read' or 'unread' based on the status of the article.
      *
      * - Add a 'read' property to each article
      * - Add a button to the article's template
@@ -22,11 +22,12 @@
 
     class MyElement extends LitElement {
       /**
-       *
+       *  // how to fire an event
        *  _fireEvent() {
        *     this.dispatchEvent(new CustomEvent('toggled', { detail: 'toggled event!' }));
        *  }
        *
+       *  // how to set up an event listener
        *  render() {
        *    return html`<button @click=${this._fireEvent}>click</button>`;
        *  }
