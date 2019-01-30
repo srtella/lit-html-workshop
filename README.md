@@ -7,6 +7,8 @@ The assignments should be executed in order, one step sets the stage for the nex
 
 When you are done (or bored) there are advanced assignments which are free to pick in any order.
 
+[News app demo](https://larsdenbakker.github.io/lit-html-workshop/)
+
 ## Assignments
 1. [Hello world](./2-lit-element/assignments/1-hello-world.html)
 2. [Fetch first article](./2-lit-element/assignments/2-fetch-first-article.html)
