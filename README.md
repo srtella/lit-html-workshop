@@ -1,7 +1,7 @@
 # lit-html workshop
 In this workshop you will work on assigments. The lit-html assignments are done with the whole group, the lit-element assignments are done individually.
 
-You can work on the assignment by copy pasting them into http://plnkr.co/edit/DI9312Rn54NuIH7FRzzD?p=preview, or by cloning this repository and running it locally (npm start).
+You can work on the assignment by copy pasting them into http://plnkr.co/edit/eKrRiUUf2HtBmaCsiaH6?p=preview, or by cloning this repository and running it locally (npm start).
 
 The assignments should be executed in order, one step sets the stage for the next step. When in doubt, ask us or check the solution.
 
